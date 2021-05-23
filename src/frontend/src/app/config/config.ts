@@ -1,4 +1,4 @@
 export const config = {
-    productServiceUrl : 'https://arcane-wildwood-10013.herokuapp.com/products',
-    transactionServiceUrl: 'https://arcane-wildwood-10013.herokuapp.com/transaction',
+    productServiceUrl : 'https://prf-igyfe6.herokuapp.com/products',
+    transactionServiceUrl: 'https://prf-igyfe6.herokuapp.com/transaction',
 }
