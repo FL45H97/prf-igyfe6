@@ -1,11 +1,9 @@
-<div class="content" role="main">
-    <ul>
-      <li *ngFor="let el of products">
-        <p>{{el.name}} </p>
-        <p>{{el.description}} stock: {{el.quantity}} </p>
-        <p>price: {{el.price}} </p>
-        <button *ngIf="el.quantity>0" (click)="registerTransaction(el.id, el.price)"> buy </button>
-      </li>
-    </ul>
-    <button (click)="refreshDb()">REFRESH</button>
-  </div>
+<div class="content" >  
+    <mat-card *ngFor="let el of products;" class="prod-card">
+      <mat-card-content>
+      <p>{{el.name}} | Quantity: {{el.quantity}}</p>
+      <p>Price: {{el.price}} Ft</p>
+      <button mat-raised-button color="primary" *ngIf="el.quantity > 0" (click)="registerTransaction(el.id, el.price)"> Buy one! </button>
+      </mat-card-content>
+    </mat-card>
+</div>
