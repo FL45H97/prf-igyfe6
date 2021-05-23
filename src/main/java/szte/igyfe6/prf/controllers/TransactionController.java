@@ -54,7 +54,9 @@ public class TransactionController {
     @PostMapping(path="/transaction", consumes = "application/json")
     public String addTransaction(@RequestBody Transaction trx) {
         try {
+            System.out.println("1.");
             this.tService.addTransaction(trx);
+            System.out.println("2.");
             this.pService.sellProduct(trx.getProductID());
             return "Transaction was created.";
         } catch (Exception e) {
