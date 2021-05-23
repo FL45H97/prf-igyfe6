@@ -19,11 +19,12 @@ Angular projekt létrehozása 2021.05.03.
 	- Heroku összekötés
 
 
-2021.05.21-23. repo clean új deploy, új projektek, új git és dokumentáció
+2021.05.21-23. repo clean új deploy, új projektek, új git és dokumentáció + hibajavítások
 
-URL-k:
+### URL-k:
 
-https://prf-igyfe6.herokuapp.com/products		GET	összes termék listázása
-https://prf-igyfe6.herokuapp.com/product		GET,POST,DELETE 1 termék lekérése, hozzáadása, törlése
-https://prf-igyfe6.herokuapp.com/transaction 	POST, tranzakció létrehozása
-https://prf-igyfe6.herokuapp.com/transactions	GET	összes tranzakció listázása
+- https://prf-igyfe6.herokuapp.com/products		GET	összes termék listázása
+- https://prf-igyfe6.herokuapp.com/product		GET,POST,DELETE 1 termék lekérése, hozzáadása, törlése
+- https://prf-igyfe6.herokuapp.com/transaction 	POST, tranzakció létrehozása
+- https://prf-igyfe6.herokuapp.com/transactions	GET	összes tranzakció listázása
+- https://prf2021.web.app Angular firebase deploy
