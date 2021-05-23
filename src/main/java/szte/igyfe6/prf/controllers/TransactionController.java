@@ -55,7 +55,7 @@ public class TransactionController {
     public String addTransaction(@RequestBody Transaction trx) {
         try {
             this.tService.addTransaction(trx);
-            this.pService.sellProduct(trx.getId());
+            this.pService.sellProduct(trx.getProductID());
             return "Transaction was created.";
         } catch (Exception e) {
             System.out.println(e);

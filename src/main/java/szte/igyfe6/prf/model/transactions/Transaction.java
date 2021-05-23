@@ -1,17 +1,16 @@
 package szte.igyfe6.prf.model.transactions;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "transactions")
 public class Transaction {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    private int productID;
     private String date;
     private int price;
     private int quantity;
@@ -19,8 +18,8 @@ public class Transaction {
     public Transaction() {
     }
 
-    public Transaction(int id, int price, int quantity) {
-        this.id = id;
+    public Transaction(int productID, int price, int quantity) {
+        this.productID = productID;
         this.price = price;
         this.quantity = quantity;
         this.date = LocalDate.now().toString();
@@ -29,6 +28,8 @@ public class Transaction {
     public int getId() {
         return id;
     }
+
+
 
     public void setId(int id) {
         this.id = id;
@@ -48,5 +49,13 @@ public class Transaction {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public int getProductID() {
+        return productID;
+    }
+
+    public void setProductID(int productID) {
+        this.productID = productID;
     }
 }
