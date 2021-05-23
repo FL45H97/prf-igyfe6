@@ -62,6 +62,4 @@ public class TransactionController {
             return "Error! Could not create transaction!";
         }
     }
-
-
 }
