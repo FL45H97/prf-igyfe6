@@ -42,6 +42,7 @@ public class ProductServiceImpl implements ProductService {
     public void sellProduct(int productId){
         Product product = getProductById(productId);
         product.setQuantity(product.getQuantity()-1);
+        this.productRepository.save(product);
     }
     
 }
