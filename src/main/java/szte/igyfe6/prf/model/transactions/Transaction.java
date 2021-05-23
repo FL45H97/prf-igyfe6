@@ -18,8 +18,8 @@ public class Transaction {
     public Transaction() {
     }
 
-    public Transaction(int productID, int price, int quantity) {
-        this.productID = productID;
+    public Transaction(int id, int price, int quantity) {
+        this.productID = id;
         this.price = price;
         this.quantity = quantity;
         this.date = LocalDate.now().toString();
