@@ -19,4 +19,4 @@ Angular projekt létrehozása 2021.05.03.
 	- Heroku összekötés
 
 
-2021.05.22-23. repo clean új deploy, új projektek, új git és dokumentáció
+2021.05.21-23. repo clean új deploy, új projektek, új git és dokumentáció
