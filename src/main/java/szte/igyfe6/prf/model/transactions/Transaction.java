@@ -19,6 +19,7 @@ public class Transaction {
     }
 
     public Transaction(int id, int price, int quantity) {
+        this.id = 0;
         this.productID = id;
         this.price = price;
         this.quantity = quantity;
