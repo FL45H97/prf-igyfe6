@@ -18,9 +18,9 @@ public class Transaction {
     public Transaction() {
     }
 
-    public Transaction(int id, int price, int quantity) {
-        this.id = 0;
-        this.productID = id;
+    public Transaction(int id, int productID, int price, int quantity) {
+        this.id = id;
+        this.productID = productID;
         this.price = price;
         this.quantity = quantity;
         this.date = LocalDate.now().toString();

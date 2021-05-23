@@ -14,6 +14,6 @@ export class TransactionService {
   }
   
   public registerTransaction(id: number, price: number): void {
-    this.http.post<Transaction>(this.transactionUrl, new Transaction(id, price)).subscribe();
+    this.http.post<Transaction>(this.transactionUrl, new Transaction(0,id, price)).subscribe();
   }
 }
