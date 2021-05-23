@@ -1,0 +1,19 @@
+.coloredtext {
+    color:black;
+}
+
+.lightcolored {
+    color:lightgray;
+}
+
+.full-width {
+    width:100%;
+}
+
+.my-card {
+    margin:auto;
+    width: 20%; 
+    margin-top:10%; 
+    background-color: whitesmoke; 
+    color: tomato !important; 
+}
